@@ -30,11 +30,11 @@ const Navbar = () => {
     <nav
       className={`${
         styles.paddingX
-      } w-full flex-1 items-center py-5  top-0 z-20 ${
+      } w-full flex-1 items-center py-5  top-0 z-200 ${
         scrolled ? "bg-primary" : "bg-transparent"
       }`}
     >
-      <div className='w-full flex  fixed justify-between items-center max-w-7xl mx-auto'>
+      <div className='w-full flex  fixed items-center   mx-auto'>
         <Link
           to='/'
           className='flex items-center gap-2'
@@ -44,13 +44,13 @@ const Navbar = () => {
           }}
         >
           <img src={logo} alt='logo' className='w-16 h-16 object-contain' />
-          <p className='text-primary text-[22px] font-bold cursor-pointer flex '>
+          <p className='text-white text-[22px] font-bold cursor-pointer flex z-50 '>
             Michael &nbsp;
             <span className='sm:block hidden'> | Gnaho</span>
           </p>
         </Link>
 
-        <ul className='list-none hidden sm:flex flex-row gap-10'>
+        <ul className='list-none hidden sm:flex flex-row gap-10 z-50 ml-[500px] '>
           {navLinks.map((nav) => (
             <li
               key={nav.id}
