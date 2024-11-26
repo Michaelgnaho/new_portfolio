@@ -50,11 +50,11 @@ const services = [
     icon: mobile,
   },
   {
-    title: "Backend Developer",
+    title: "Frontend Software Engineer",
     icon: backend,
   },
   {
-    title: "Content Creator",
+    title: "Spoken Word Artiste",
     icon: creator,
   },
 ];
@@ -112,29 +112,75 @@ const technologies = [
 
 const experiences = [
   {
-    title: "Frontend Developer",
-    company_name: "HiTasks",
+    title: "Full-Stack Developer",
+    company_name: "Enovalab",
     icon: projImg0,
     iconBg: "#383E56",
-    date: "Jan 2022 - Dec 2022",
+    date: "Sept 2024 - Present",
+    location: "Lagos, Nigeria",
     points: [
-      "Developed a full front-end task management app with user authentication and dashboards.",
-      "Implemented responsive design to enhance user experience.",
-      "Collaborated with team members to improve application performance and usability.",
+      "Spearheaded digital transformation initiatives by developing sophisticated UI components using React.js for global trade platforms.",
+      "Engineered robust backend solutions with Node.js, creating optimized data models to streamline complex trade processes.",
+      "Collaborated with cross-functional teams to enhance application performance and user experience in digital trade ecosystems.",
+      "Implemented advanced state management and responsive design techniques to create scalable web applications.",
+    ],
+  },
+  {
+    title: "Software Engineering Intern",
+    company_name: "ALX Africa",
+    icon: projImg1,
+    iconBg: "#E6DEDD",
+    date: "Sept 2023 - April 2024",
+    location: "Lagos, Nigeria",
+    points: [
+      "Developed innovative UI components using React.js to digitize and simplify global trade processes.",
+      "Designed and implemented comprehensive data models with Ruby on Rails to represent complex trade workflows.",
+      "Participated in agile development methodologies, contributing to team productivity and project success.",
+      "Created modular and reusable code components to improve development efficiency and application maintainability.",
+    ],
+  },
+  {
+    title: "Social Media Influencer",
+    company_name: "ALX Africa",
+    icon: projImg2,
+    iconBg: "#E6DEDD",
+    date: "Feb 2024 - Present",
+    location: "Lagos, Nigeria",
+    points: [
+      "Developed and executed strategic social media content to enhance brand visibility and engagement.",
+      "Created compelling narratives highlighting the institution's services and educational initiatives.",
+      "Leveraged digital platforms to communicate organizational value propositions and reach target audiences.",
+      "Analyzed social media metrics to optimize content strategy and audience interaction.",
+    ],
+  },
+  {
+    title: "Global Youth Ambassador",
+    company_name: "Thierword",
+    icon: projImg3,
+    iconBg: "#383E56",
+    date: "Feb 2024 - Present",
+    location: "London, UK",
+    points: [
+      "Represented global youth perspectives on Sustainable Development Goals (SDGs) at international forums.",
+      "Focused on SDG 4 (Quality Education), developing innovative strategies to address educational challenges.",
+      "Conducted in-depth research to propose actionable solutions for improving educational access and quality.",
+      "Collaborated with United Nations representatives to advocate for youth-centric educational initiatives.",
+      "Developed comprehensive research reports and presentations to support SDG 4 objectives.",
     ],
   },
   {
     title: "Freelance Developer",
     company_name: "Various Clients",
-    icon: projImg3,
+    icon: projImg4,
     iconBg: "#E6DEDD",
     date: "Jan 2023 - Present",
     points: [
-      "Built and deployed custom web and mobile applications for clients.",
-      "Enhanced website performance using optimized code and modern technologies.",
-      "Maintained project timelines and ensured client satisfaction.",
+      "Delivered custom web and mobile applications tailored to diverse client requirements.",
+      "Implemented cutting-edge technologies to enhance application performance and user experience.",
+      "Managed end-to-end project lifecycles, ensuring timely delivery and exceeding client expectations.",
+      "Provided technical consulting and solution design for startups and established businesses.",
     ],
-  },
+  }
 ];
 
 const testimonials = [
