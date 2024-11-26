@@ -16,15 +16,15 @@ const FeedbackCard = ({
 }) => (
   <motion.div
     variants={fadeIn("", "spring", index * 0.5, 0.75)}
-    className='bg-black-200 p-10 rounded-3xl xs:w-[300px] w-full'
+    className='bg-black-200 p-10 rounded-3xl xs:w-[300px] w-full m-4 gap-4'
   >
     <p className='text-white font-black text-[48px]'>"</p>
 
     <div className='mt-1'>
       <p className='text-white tracking-wider text-[18px]'>{testimonial}</p>
 
-      <div className='mt-7 flex justify-between items-center gap-1'>
-        <div className='flex-1 flex flex-col'>
+      <div className='mt-7 flex justify-between items-center gap-1 animate'>
+        <div className='flex-1 flex flex-col animate'>
           <p className='text-white font-medium text-[16px]'>
             <span className='blue-text-gradient'>@</span> {name}
           </p>
@@ -66,14 +66,14 @@ const Feedbacks = () => {
   return (
     <div className={`mt-12 bg-black-100 rounded-[20px]`}>
       <div
-        className={`bg-tertiary rounded-2xl ${styles.padding} min-h-[300px]`}
+        className={`bg-tertiary rounded-2xl ${styles.padding} min-h-[300px] gap-4`}
       >
         <motion.div variants={textVariant()}>
           <p className={styles.sectionSubText}>What others say</p>
           <h2 className={styles.sectionHeadText}>Testimonials.</h2>
         </motion.div>
       </div>
-      <div className={`-mt-20 pb-14 ${styles.paddingX}`}>
+      <div className={`-mt-20 mx-4 pb-14 gap-4 ${styles.paddingX}`}>
         <Slider {...settings}>
           {testimonials.map((testimonial, index) => (
             <FeedbackCard key={testimonial.name} index={index} {...testimonial} />
