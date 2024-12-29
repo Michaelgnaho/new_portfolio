@@ -50,7 +50,7 @@ const About = () => {
   variants={fadeIn("", "", 0.1, 1)}
   className='mt-4 text-secondary text-[17px] max-w-3xl leading-[30px]'
 >
-  Hi, I'm Michael Adeyemi Gnaho (MAG), 
+  Hi, I am Michael Adeyemi Gnaho (MAG), 
   a passionate full-stack developer with a strong focus on creating engaging and 
   interactive web experiences. My expertise is balanced: 60% frontend and 40% backend, 
   enabling me to seamlessly bridge design and functionality for impactful applications.
