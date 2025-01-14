@@ -1,38 +1,51 @@
 import React from "react";
-import { SectionWrapper } from "../hoc";
-import { technologies } from "../constants";
+import { technologies } from "../constants/index";
 
 const TechCarousel = () => {
   return (
-    <div className="relative w-full overflow-hidden ">
-      <div className="flex animate-carousel-slide ">
+    <div className="relative w-full overflow-hidden bg-transparent py-8">
+      <div className="inline-flex animate-slide-track">
         {/* First set of technologies */}
-        {technologies.map((technology) => (
-          <div 
-            key={`first-${technology.name}`} 
-            className="flex-shrink-0 w-28 h-28 mx-4 flex items-center justify-center"
-          >
-            <img 
-              src={technology.icon} 
-              alt={technology.name} 
-              className="w-20 h-20 object-contain"
-            />
-          </div>
-        ))}
-        
-        {/* Duplicate set for infinite scroll effect */}
-        {technologies.map((technology) => (
-          <div 
-            key={`second-${technology.name}`} 
-            className="flex-shrink-0 w-28 h-28 mx-4 flex items-center justify-center"
-          >
-            <img 
-              src={technology.icon} 
-              alt={technology.name} 
-              className="w-20 h-20 object-contain"
-            />
-          </div>
-        ))}
+        <div className="flex gap-8 py-4">
+          {technologies.map((technology, index) => (
+            <div
+              key={`tech-1-${index}`}
+              className="flex flex-col items-center justify-center min-w-[120px] group"
+            >
+              <div className="w-16 h-16 md:w-20 md:h-20 flex items-center justify-center rounded-full bg-white/5 backdrop-blur-sm transition-all duration-300 group-hover:bg-white/10">
+                <img
+                  src={technology.icon}
+                  alt={technology.name}
+                  className="w-12 h-12 md:w-14 md:h-14 object-contain"
+                />
+              </div>
+              <p className="mt-2 text-sm text-white/70 text-center">
+                {technology.name}
+              </p>
+            </div>
+          ))}
+        </div>
+
+        {/* Duplicated set for seamless loop */}
+        <div className="flex gap-8 py-4">
+          {technologies.map((technology, index) => (
+            <div
+              key={`tech-2-${index}`}
+              className="flex flex-col items-center justify-center min-w-[120px] group"
+            >
+              <div className="w-16 h-16 md:w-20 md:h-20 flex items-center justify-center rounded-full bg-white/5 backdrop-blur-sm transition-all duration-300 group-hover:bg-white/10">
+                <img
+                  src={technology.icon}
+                  alt={technology.name}
+                  className="w-12 h-12 md:w-14 md:h-14 object-contain"
+                />
+              </div>
+              <p className="mt-2 text-sm text-white/70 text-center">
+                {technology.name}
+              </p>
+            </div>
+          ))}
+        </div>
       </div>
     </div>
   );
@@ -40,40 +53,19 @@ const TechCarousel = () => {
 
 const Tech = () => {
   return (
-    <div>
-      <div className="text-center mb-10">
-        <p className="text-secondary text-[14px] uppercase tracking-wider">
+    <div className="flex flex-col items-center justify-center min-h-screen px-4">
+      <div className="max-w-7xl mx-auto w-full">
+        <h2 className="text-4xl font-bold text-center text-white mb-4">
           Technologies I Work With
-        </p>
-        <h2 className="text-white font-black md:text-[60px] sm:text-[50px] xs:text-[40px] text-[30px]">
-          Technologies.
         </h2>
+        <p className="text-white/70 text-center mb-12 max-w-2xl mx-auto">
+          Leveraging cutting-edge tools and frameworks to build robust
+          solutions.
+        </p>
+        <TechCarousel />
       </div>
-      
-      <TechCarousel />
     </div>
   );
 };
 
-// Add to your Tailwind CSS file or inline styles
-const styles = `
-  @keyframes carousel-slide {
-    0% {
-      transform: translateX(0);
-    }
-    100% {
-      transform: translateX(-50%);
-    }
-  }
-
-  .animate-carousel-slide {
-    display: flex;
-    animation: carousel-slide 30s linear infinite; /* Adjust duration as needed */
-  }
-
-  .animate-carousel-slide:hover {
-    animation-play-state: paused;
-  }
-`;
-
-export default SectionWrapper(Tech, "");
+export default Tech;
