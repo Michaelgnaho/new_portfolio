@@ -15,13 +15,16 @@ import {
   git,
   figma,
   docker,
-
 } from "../assets";
 import projImg0 from "../assets/snapPRoject.PNG";
 import projImg1 from "../assets/tindog_snapshot.PNG";
 import projImg2 from "../assets/corprate_snaphot.PNG";
 import projImg3 from "../assets/mydos_snapshot.PNG";
 import projImg4 from "../assets/magbank.PNG";
+import adunni from "../assets/adunni.png";
+import ecss from "../assets/ecss.png";
+import netrix from "../assets/nextrix.png";
+import greenJanitor from "../assets/green.png";
 import projImg5 from "../assets/news_letter_snapshot.PNG";
 import projImg6 from "../assets/simple _form.PNG";
 
@@ -180,7 +183,7 @@ const experiences = [
       "Managed end-to-end project lifecycles, ensuring timely delivery and exceeding client expectations.",
       "Provided technical consulting and solution design for startups and established businesses.",
     ],
-  }
+  },
 ];
 
 const testimonials = [
@@ -212,6 +215,90 @@ const testimonials = [
 
 const projects = [
   {
+    name: "Next-Trix",
+    description:
+      "A full front-end app that craft innovative digital solutions that drive growth, engage customers, and elevate your brand in the digital landscape.",
+    tags: [
+      {
+        name: "Next.js",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "tailwind",
+        color: "pink-text-gradient",
+      },
+      {
+        name: "firebase",
+        color: "green-text-gradient",
+      },
+    ],
+    image: netrix,
+    source_code_link: "https://next-trix.vercel.app/",
+  },
+  {
+    name: "green-janitors",
+    description:
+      "A full front-end app for Youth environmental allies standing guard for our planet's future. We show up wherever the environment faces danger, from protesting atomic testing to combating climate change and pollution.",
+    tags: [
+      {
+        name: "react",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "tailwind",
+        color: "pink-text-gradient",
+      },
+      {
+        name: "firebase",
+        color: "green-text-gradient",
+      },
+    ],
+    image: greenJanitor,
+    source_code_link: "https://green-janitor1.vercel.app/",
+  },
+  {
+    name: "Adunni save a girl girl child",
+    description:
+      "A full front-end app for an NGO dedicated to nurturing and empowering young girls to achieve their dreams and build brighter futures..",
+    tags: [
+      {
+        name: "react",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "tailwind",
+        color: "pink-text-gradient",
+      },
+      {
+        name: "firebase",
+        color: "green-text-gradient",
+      },
+    ],
+    image: adunni,
+    source_code_link: "https://www.adunni-save-a-girl-foundation.com.ng/",
+  },
+  {
+    name: "ECSS",
+    description:
+      "A Personalized coaching website to help clients achieve their work-life balance",
+    tags: [
+      {
+        name: "react",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "tailwind",
+        color: "pink-text-gradient",
+      },
+      {
+        name: "firebase",
+        color: "green-text-gradient",
+      },
+    ],
+    image: ecss,
+    source_code_link: "https://ecss-nu.vercel.app/",
+  },
+  {
     name: "HiTask APP",
     description:
       "A full front-end app for tasks management with user authentication, dashboard, and several pages.",
@@ -232,10 +319,10 @@ const projects = [
     image: projImg0,
     source_code_link: "https://hi-tasks.com.ng/",
   },
+
   {
     name: "Front-end Corporate Website",
-    description:
-      "A demo of a website that offers web development services.",
+    description: "A demo of a website that offers web development services.",
     tags: [
       {
         name: "html",
@@ -255,8 +342,7 @@ const projects = [
   },
   {
     name: "MAG BANK",
-    description:
-      "A finance website for modern banking solutions.",
+    description: "A finance website for modern banking solutions.",
     tags: [
       {
         name: "nextjs",
@@ -276,8 +362,7 @@ const projects = [
   },
   {
     name: "Tindog App",
-    description:
-      "An app for buying and taking care of dogs.",
+    description: "An app for buying and taking care of dogs.",
     tags: [
       {
         name: "bootstrap",
@@ -295,69 +380,68 @@ const projects = [
     image: projImg1,
     source_code_link: "https://michaelgnaho.github.io/tindog_web/",
   },
-  {
-    name: "Full Stack Todo App",
-    description: "Allows users to manage their tasks easily.",
-    tags: [
-      {
-        name: "react",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "express",
-        color: "green-text-gradient",
-      },
-      {
-        name: "mongodb",
-        color: "pink-text-gradient",
-      },
-    ],
-    image: projImg3,
-    source_code_link: "https://mydos-web-app.onrender.com",
-  },
-  {
-    name: "Newsletter App",
-    description:
-      "A platform to design and manage newsletters.",
-    tags: [
-      {
-        name: "nodejs",
-        color: "green-text-gradient",
-      },
-      {
-        name: "ejs",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "css",
-        color: "pink-text-gradient",
-      },
-    ],
-    image: projImg5,
-    source_code_link: "https://news-letter-app-d357.onrender.com/",
-  },
-  {
-    name: "Simple Form",
-    description:
-      "An app that features a simple form to add users and their ages.",
-    tags: [
-      {
-        name: "react",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "vite",
-        color: "pink-text-gradient",
-      },
-      {
-        name: "css",
-        color: "green-text-gradient",
-      },
-    ],
-    image: projImg6,
-    source_code_link: "https://simple-form-silk.vercel.app/",
-  },
+  // {
+  //   name: "Full Stack Todo App",
+  //   description: "Allows users to manage their tasks easily.",
+  //   tags: [
+  //     {
+  //       name: "react",
+  //       color: "blue-text-gradient",
+  //     },
+  //     {
+  //       name: "express",
+  //       color: "green-text-gradient",
+  //     },
+  //     {
+  //       name: "mongodb",
+  //       color: "pink-text-gradient",
+  //     },
+  //   ],
+  //   image: projImg3,
+  //   source_code_link: "https://mydos-web-app.onrender.com",
+  // },
+  // {
+  //   name: "Newsletter App",
+  //   description:
+  //     "A platform to design and manage newsletters.",
+  //   tags: [
+  //     {
+  //       name: "nodejs",
+  //       color: "green-text-gradient",
+  //     },
+  //     {
+  //       name: "ejs",
+  //       color: "blue-text-gradient",
+  //     },
+  //     {
+  //       name: "css",
+  //       color: "pink-text-gradient",
+  //     },
+  //   ],
+  //   image: projImg5,
+  //   source_code_link: "https://news-letter-app-d357.onrender.com/",
+  // },
+  // {
+  //   name: "Simple Form",
+  //   description:
+  //     "An app that features a simple form to add users and their ages.",
+  //   tags: [
+  //     {
+  //       name: "react",
+  //       color: "blue-text-gradient",
+  //     },
+  //     {
+  //       name: "vite",
+  //       color: "pink-text-gradient",
+  //     },
+  //     {
+  //       name: "css",
+  //       color: "green-text-gradient",
+  //     },
+  //   ],
+  //   image: projImg6,
+  //   source_code_link: "https://simple-form-silk.vercel.app/",
+  // },
 ];
-
 
 export { services, technologies, experiences, testimonials, projects };
