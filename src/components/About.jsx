@@ -1,20 +1,16 @@
 import React, { useState } from "react";
 import { services } from "../constants";
+import AnimatedContent from "./UI/AnimatedContent";
+import  ServiceCard  from "./UI/ServiceCard";
 
-const ServiceCard = ({ title, icon }) => (
-  <div className="w-full sm:w-[250px] md:w-[300px] bg-gray-800 rounded-[20px] p-5 text-center">
-    <img src={icon} alt={title} className="w-16 h-16 mx-auto object-contain" />
-    <h3 className="text-white text-lg sm:text-xl md:text-[20px] font-bold mt-4">
-      {title}
-    </h3>
-  </div>
-);
+
 
 const About = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
     <div className="px-4 sm:px-8 md:px-20">
+      <AnimatedContent>
       <h2 className="text-2xl sm:text-3xl font-bold mb-4">Overview</h2>
 
       <div className="text-gray-400 text-base sm:text-[17px] max-w-3xl leading-relaxed sm:leading-[30px]">
@@ -63,12 +59,15 @@ const About = () => {
       </button>
 
       <div className="mt-10 sm:mt-16 md:mt-20 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 justify-center">
-        {services.map((service) => (
-          <div key={service.title} className="flex justify-center">
-            <ServiceCard {...service} />
-          </div>
-        ))}
-      </div>
+  {services.map((service) => (
+    <div key={service.title} className="flex justify-center">
+      <AnimatedContent>
+        <ServiceCard {...service} />
+      </AnimatedContent>
+    </div>
+  ))}
+</div>
+      </AnimatedContent>
     </div>
   );
 };
