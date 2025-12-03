@@ -10,7 +10,7 @@ import {
   reactjs,
   redux,
   tailwind,
-  next.js-icon,
+  nextJs,
   nodejs,
   mongodb,
   git,
@@ -120,20 +120,20 @@ const technologies = [
 ];
 
 const experiences = [
-    {
-  title: "Frontend Developer",
-  company_name: "Alpha Maga Limited",
-  icon: projImg4,
-  iconBg: "#E6DEDD",
-  date: "Oct 2023 - Present",
-  points: [
-    "Designed and developed high-performance web and mobile interfaces with clean, reusable, and scalable code.",
-    "Implemented modern frontend technologies and best practices to improve UI responsiveness, accessibility, and overall user experience.",
-    "Collaborated across design, product, and engineering teams to deliver end-to-end solutions that consistently met project goals and timelines.",
-    "Led technical decision-making for client projects, providing expert guidance on architecture, tools, and optimal implementation strategies.",
-    "Optimized applications for speed, security, and cross-platform compatibility, resulting in improved user engagement and client satisfaction.",
-  ],
-}
+  {
+    title: "Frontend Developer",
+    company_name: "Alpha Maga Limited",
+    icon: projImg4,
+    iconBg: "#E6DEDD",
+    date: "Oct 2023 - Present",
+    points: [
+      "Designed and developed high-performance web and mobile interfaces with clean, reusable, and scalable code.",
+      "Implemented modern frontend technologies and best practices to improve UI responsiveness, accessibility, and overall user experience.",
+      "Collaborated across design, product, and engineering teams to deliver end-to-end solutions that consistently met project goals and timelines.",
+      "Led technical decision-making for client projects, providing expert guidance on architecture, tools, and optimal implementation strategies.",
+      "Optimized applications for speed, security, and cross-platform compatibility, resulting in improved user engagement and client satisfaction.",
+    ],
+  },
   {
     title: "Freelance Developer",
     company_name: "Various Clients",
@@ -147,7 +147,6 @@ const experiences = [
       "Provided technical consulting and solution design for startups and established businesses.",
     ],
   },
-
 
   {
     title: "Full-Stack Developer",
@@ -206,7 +205,6 @@ const experiences = [
       "Developed comprehensive research reports and presentations to support SDG 4 objectives.",
     ],
   },
-  
 ];
 
 const testimonials = [
@@ -238,43 +236,43 @@ const testimonials = [
 
 const projects = [
   {
-  name: "God's Favourite Hospital",
-  description:
-    "A polished front-end website for a Lagos-based private hospital delivering world-class, compassionate and affordable healthcare services, including emergency care, maternity, paediatrics, surgery, lab, pharmacy and more. The site emphasises trust, care and healthcare excellence. 🙏🏽",
-  tags: [
-    { name: "nextjs", color: "blue-text-gradient" },
-    { name: "tailwind", color: "pink-text-gradient" },
-    { name: "scss", color: "green-text-gradient" },
-  ],
-  image: godsfavHospitalImage,  
-  source_code_link: "https://www.godsfavouritehospital.com/",
-},
+    name: "God's Favourite Hospital",
+    description:
+      "A polished front-end website for a Lagos-based private hospital delivering world-class, compassionate and affordable healthcare services, including emergency care, maternity, paediatrics, surgery, lab, pharmacy and more. The site emphasises trust, care and healthcare excellence. 🙏🏽",
+    tags: [
+      { name: "nextjs", color: "blue-text-gradient" },
+      { name: "tailwind", color: "pink-text-gradient" },
+      { name: "scss", color: "green-text-gradient" },
+    ],
+    image: godsfavHospitalImage,
+    source_code_link: "https://www.godsfavouritehospital.com/",
+  },
 
-{
-  name: "Holfort Media",
-  description:
-    "A responsive front-end website for a full-service digital media agency specialising in brand strategy, social-media management, content creation, influencer marketing and paid advertising — aimed at helping businesses build strong digital presence and growth. 🎯",
-  tags: [
-    { name: "react", color: "blue-text-gradient" },
-    { name: "tailwind", color: "pink-text-gradient" },
-    { name: "firebase", color: "green-text-gradient" },
-  ],
-  image: holfortMediaImage, 
-  source_code_link: "https://www.holfortmedia.com.ng/",
-},
+  {
+    name: "Holfort Media",
+    description:
+      "A responsive front-end website for a full-service digital media agency specialising in brand strategy, social-media management, content creation, influencer marketing and paid advertising — aimed at helping businesses build strong digital presence and growth. 🎯",
+    tags: [
+      { name: "react", color: "blue-text-gradient" },
+      { name: "tailwind", color: "pink-text-gradient" },
+      { name: "firebase", color: "green-text-gradient" },
+    ],
+    image: holfortMediaImage,
+    source_code_link: "https://www.holfortmedia.com.ng/",
+  },
 
-{
-  name: "MOTRAC Global Resources",
-  description:
-    "A modern front-end site for a hybrid consultancy & human-capital development firm — combining ICT solutions, business development, policy consulting and media services — built to reflect professionalism, scalability, and global outreach. 🌍",
-  tags: [
-    { name: "nextjs", color: "blue-text-gradient" },
-    { name: "tailwind", color: "pink-text-gradient" },
-    { name: "typescript", color: "green-text-gradient" },
-  ],
-  image: motrac, 
-  source_code_link: "https://motrac-frontend.vercel.app/",
-},
+  {
+    name: "MOTRAC Global Resources",
+    description:
+      "A modern front-end site for a hybrid consultancy & human-capital development firm — combining ICT solutions, business development, policy consulting and media services — built to reflect professionalism, scalability, and global outreach. 🌍",
+    tags: [
+      { name: "nextjs", color: "blue-text-gradient" },
+      { name: "tailwind", color: "pink-text-gradient" },
+      { name: "typescript", color: "green-text-gradient" },
+    ],
+    image: motrac,
+    source_code_link: "https://motrac-frontend.vercel.app/",
+  },
 
   {
     name: "Next-Trix",
