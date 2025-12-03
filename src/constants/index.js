@@ -10,6 +10,7 @@ import {
   reactjs,
   redux,
   tailwind,
+  next.js-icon,
   nodejs,
   mongodb,
   git,
@@ -25,8 +26,9 @@ import adunni from "../assets/adunni.png";
 import ecss from "../assets/ecss.png";
 import netrix from "../assets/nextrix.png";
 import greenJanitor from "../assets/green.png";
-import projImg5 from "../assets/news_letter_snapshot.PNG";
-import projImg6 from "../assets/simple _form.PNG";
+import motrac from "../assets/motrac.PNG";
+import godsfavHospitalImage from "../assets/godsfav.PNG";
+import holfortmedia from "../assets/holfort.PNG";
 
 export const navLinks = [
   {
@@ -118,12 +120,41 @@ const technologies = [
 ];
 
 const experiences = [
+    {
+  title: "Frontend Developer",
+  company_name: "Alpha Maga Limited",
+  icon: projImg4,
+  iconBg: "#E6DEDD",
+  date: "Oct 2023 - Present",
+  points: [
+    "Designed and developed high-performance web and mobile interfaces with clean, reusable, and scalable code.",
+    "Implemented modern frontend technologies and best practices to improve UI responsiveness, accessibility, and overall user experience.",
+    "Collaborated across design, product, and engineering teams to deliver end-to-end solutions that consistently met project goals and timelines.",
+    "Led technical decision-making for client projects, providing expert guidance on architecture, tools, and optimal implementation strategies.",
+    "Optimized applications for speed, security, and cross-platform compatibility, resulting in improved user engagement and client satisfaction.",
+  ],
+}
+  {
+    title: "Freelance Developer",
+    company_name: "Various Clients",
+    icon: projImg4,
+    iconBg: "#E6DEDD",
+    date: "Jan 2025 - Sept, 2025",
+    points: [
+      "Delivered custom web and mobile applications tailored to diverse client requirements.",
+      "Implemented cutting-edge technologies to enhance application performance and user experience.",
+      "Managed end-to-end project lifecycles, ensuring timely delivery and exceeding client expectations.",
+      "Provided technical consulting and solution design for startups and established businesses.",
+    ],
+  },
+
+
   {
     title: "Full-Stack Developer",
     company_name: "Enovalab",
     icon: projImg0,
     iconBg: "#383E56",
-    date: "Sept 2024 - Present",
+    date: "Sept 2024 - Jan 2025",
     location: "Lagos, Nigeria",
     points: [
       "Spearheaded digital transformation initiatives by developing sophisticated UI components using React.js for global trade platforms.",
@@ -137,7 +168,7 @@ const experiences = [
     company_name: "ALX Africa",
     icon: projImg1,
     iconBg: "#E6DEDD",
-    date: "Sept 2023 - April 2024",
+    date: "Jan 2024 - April 2024",
     location: "Lagos, Nigeria",
     points: [
       "Developed innovative UI components using React.js to digitize and simplify global trade processes.",
@@ -151,7 +182,7 @@ const experiences = [
     company_name: "ALX Africa",
     icon: projImg2,
     iconBg: "#E6DEDD",
-    date: "Feb 2024 - Present",
+    date: "Feb 2024 - Oct 2024",
     location: "Lagos, Nigeria",
     points: [
       "Developed and executed strategic social media content to enhance brand visibility and engagement.",
@@ -175,19 +206,7 @@ const experiences = [
       "Developed comprehensive research reports and presentations to support SDG 4 objectives.",
     ],
   },
-  {
-    title: "Freelance Developer",
-    company_name: "Various Clients",
-    icon: projImg4,
-    iconBg: "#E6DEDD",
-    date: "Jan 2023 - Present",
-    points: [
-      "Delivered custom web and mobile applications tailored to diverse client requirements.",
-      "Implemented cutting-edge technologies to enhance application performance and user experience.",
-      "Managed end-to-end project lifecycles, ensuring timely delivery and exceeding client expectations.",
-      "Provided technical consulting and solution design for startups and established businesses.",
-    ],
-  },
+  
 ];
 
 const testimonials = [
@@ -218,6 +237,45 @@ const testimonials = [
 ];
 
 const projects = [
+  {
+  name: "God's Favourite Hospital",
+  description:
+    "A polished front-end website for a Lagos-based private hospital delivering world-class, compassionate and affordable healthcare services, including emergency care, maternity, paediatrics, surgery, lab, pharmacy and more. The site emphasises trust, care and healthcare excellence. 🙏🏽",
+  tags: [
+    { name: "nextjs", color: "blue-text-gradient" },
+    { name: "tailwind", color: "pink-text-gradient" },
+    { name: "scss", color: "green-text-gradient" },
+  ],
+  image: godsfavHospitalImage,  
+  source_code_link: "https://www.godsfavouritehospital.com/",
+},
+
+{
+  name: "Holfort Media",
+  description:
+    "A responsive front-end website for a full-service digital media agency specialising in brand strategy, social-media management, content creation, influencer marketing and paid advertising — aimed at helping businesses build strong digital presence and growth. 🎯",
+  tags: [
+    { name: "react", color: "blue-text-gradient" },
+    { name: "tailwind", color: "pink-text-gradient" },
+    { name: "firebase", color: "green-text-gradient" },
+  ],
+  image: holfortMediaImage, 
+  source_code_link: "https://www.holfortmedia.com.ng/",
+},
+
+{
+  name: "MOTRAC Global Resources",
+  description:
+    "A modern front-end site for a hybrid consultancy & human-capital development firm — combining ICT solutions, business development, policy consulting and media services — built to reflect professionalism, scalability, and global outreach. 🌍",
+  tags: [
+    { name: "nextjs", color: "blue-text-gradient" },
+    { name: "tailwind", color: "pink-text-gradient" },
+    { name: "typescript", color: "green-text-gradient" },
+  ],
+  image: motrac, 
+  source_code_link: "https://motrac-frontend.vercel.app/",
+},
+
   {
     name: "Next-Trix",
     description:
