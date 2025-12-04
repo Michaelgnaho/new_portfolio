@@ -27,9 +27,7 @@ import shopify from "./company/shopify.png";
 import starbucks from "./company/starbucks.png";
 import tesla from "./company/tesla.png";
 
-import carrent from "./carrent.png";
-import jobit from "./jobit.png";
-import tripguide from "./tripguide.png";
+import globeGif from "./globe_gif.png";
 
 export {
   logo,
@@ -48,17 +46,15 @@ export {
   javascript,
   mongodb,
   nodejs,
+  nextJs,
   reactjs,
   redux,
   tailwind,
   typescript,
   threejs,
   meta,
-  nextJs,
   shopify,
   starbucks,
   tesla,
-  carrent,
-  jobit,
-  tripguide,
+  globeGif,
 };
