@@ -1,0 +1,10 @@
+User-agent: *
+Allow: /
+
+# Sitemaps
+Sitemap: https://michaelgnaho.vercel.app/sitemap.xml
+
+# Block irrelevant paths
+Disallow: /src/
+Disallow: /.env
+Disallow: /node_modules/

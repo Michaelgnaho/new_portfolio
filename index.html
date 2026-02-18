@@ -2,9 +2,208 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="./src/assets/logo-grayscale-inverted.png" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>MICHEAL GNAHO PORTFOLIO</title>
+
+    <!-- ✅ PRIMARY SEO TAGS -->
+    <title>
+      Michael Gnaho | Frontend & Full Stack Software Engineer Nigeria
+    </title>
+    <meta
+      name="description"
+      content="Michael Adeyemi Gnaho (MAG) — Frontend & Full Stack Software Engineer based in Lagos, Nigeria. Expert in React, Next.js, Node.js, TailwindCSS. Building world-class web and mobile applications. Available for freelance and full-time roles."
+    />
+    <meta
+      name="keywords"
+      content="frontend engineer Nigeria, full stack developer Lagos, software engineer Nigeria, React developer Lagos, Next.js developer Nigeria, Michael Gnaho, MAG developer, web developer Nigeria, frontend developer Africa, JavaScript developer Nigeria, TailwindCSS developer, Node.js developer, hire frontend developer Nigeria, freelance developer Lagos"
+    />
+    <meta name="author" content="Michael Adeyemi Gnaho" />
+    <meta
+      name="robots"
+      content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1"
+    />
+    <link rel="canonical" href="https://michaelgnaho.vercel.app/" />
+
+    <!-- ✅ OPEN GRAPH (Facebook, LinkedIn, WhatsApp) -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://michaelgnaho.vercel.app/" />
+    <meta
+      property="og:title"
+      content="Michael Gnaho | Frontend & Full Stack Software Engineer"
+    />
+    <meta
+      property="og:description"
+      content="Expert Frontend & Full Stack Engineer specializing in React, Next.js, Node.js & TailwindCSS. Based in Lagos, Nigeria. Building stunning, high-performance web apps."
+    />
+    <meta
+      property="og:image"
+      content="https://michaelgnaho.vercel.app/og-image.png"
+    />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta
+      property="og:image:alt"
+      content="Michael Gnaho - Frontend & Full Stack Software Engineer"
+    />
+    <meta property="og:site_name" content="Michael Gnaho Portfolio" />
+    <meta property="og:locale" content="en_US" />
+
+    <!-- ✅ TWITTER / X CARD -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:url" content="https://michaelgnaho.vercel.app/" />
+    <meta
+      name="twitter:title"
+      content="Michael Gnaho | Frontend & Full Stack Software Engineer"
+    />
+    <meta
+      name="twitter:description"
+      content="Expert Frontend & Full Stack Engineer — React, Next.js, Node.js, TailwindCSS. Based in Lagos, Nigeria."
+    />
+    <meta
+      name="twitter:image"
+      content="https://michaelgnaho.vercel.app/og-image.png"
+    />
+    <meta name="twitter:creator" content="@simplymag_" />
+
+    <!-- ✅ FAVICON -->
+    <link
+      rel="icon"
+      type="image/svg+xml"
+      href="./src/assets/logo-grayscale-inverted.png"
+    />
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+
+    <!-- ✅ STRUCTURED DATA: Person + Portfolio (JSON-LD) -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@graph": [
+          {
+            "@type": "Person",
+            "@id": "https://michaelgnaho.vercel.app/#person",
+            "name": "Michael Adeyemi Gnaho",
+            "alternateName": ["Michael Gnaho", "MAG", "Micheal Gnaho"],
+            "url": "https://michaelgnaho.vercel.app",
+            "image": "https://michaelgnaho.vercel.app/og-image.png",
+            "sameAs": [
+              "https://github.com/Michaelgnaho",
+              "https://www.linkedin.com/in/michael-adeyemi-gnaho-7b487020b/",
+              "https://www.instagram.com/simplymag_/",
+              "https://web.facebook.com/micheal.adeyemi.963/"
+            ],
+            "jobTitle": "Frontend & Full Stack Software Engineer",
+            "worksFor": {
+              "@type": "Organization",
+              "name": "Alpha Maga Limited"
+            },
+            "address": {
+              "@type": "PostalAddress",
+              "addressLocality": "Lagos",
+              "addressCountry": "NG"
+            },
+            "knowsAbout": [
+              "Frontend Development",
+              "Full Stack Development",
+              "React.js",
+              "Next.js",
+              "Node.js",
+              "JavaScript",
+              "TypeScript",
+              "TailwindCSS",
+              "Python",
+              "Django",
+              "MongoDB",
+              "Web Development",
+              "Mobile Development"
+            ],
+            "email": "mailto:contact@gnahomichael@gmail.com",
+            "telephone": "+2348145046894",
+            "nationality": "Nigerian"
+          },
+          {
+            "@type": "WebSite",
+            "@id": "https://michaelgnaho.vercel.app/#website",
+            "url": "https://michaelgnaho.vercel.app",
+            "name": "Michael Gnaho | Frontend & Full Stack Software Engineer Portfolio",
+            "description": "Portfolio of Michael Adeyemi Gnaho — Frontend & Full Stack Software Engineer based in Lagos, Nigeria",
+            "publisher": {
+              "@id": "https://michaelgnaho.vercel.app/#person"
+            },
+            "inLanguage": "en-US",
+            "potentialAction": {
+              "@type": "SearchAction",
+              "target": "https://michaelgnaho.vercel.app/?s={search_term_string}",
+              "query-input": "required name=search_term_string"
+            }
+          },
+          {
+            "@type": "ProfilePage",
+            "@id": "https://michaelgnaho.vercel.app/#profilepage",
+            "url": "https://michaelgnaho.vercel.app/",
+            "name": "Michael Gnaho - Software Engineer Portfolio",
+            "isPartOf": { "@id": "https://michaelgnaho.vercel.app/#website" },
+            "about": { "@id": "https://michaelgnaho.vercel.app/#person" },
+            "description": "Portfolio showcasing frontend and full stack development projects by Michael Adeyemi Gnaho"
+          }
+        ]
+      }
+    </script>
+
+    <!-- ✅ STRUCTURED DATA: ItemList of Projects -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "ItemList",
+        "name": "Michael Gnaho's Development Projects",
+        "url": "https://michaelgnaho.vercel.app/#projects",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "God's Favourite Hospital Website",
+            "url": "https://www.godsfavouritehospital.com/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Holfort Media Agency Website",
+            "url": "https://www.holfortmedia.com.ng/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 3,
+            "name": "MOTRAC Global Resources",
+            "url": "https://motrac-frontend.vercel.app/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 4,
+            "name": "HiTask App",
+            "url": "https://hi-tasks.com.ng/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 5,
+            "name": "MAG Bank",
+            "url": "https://mag-bank-1.vercel.app/"
+          }
+        ]
+      }
+    </script>
+
+    <!-- ✅ PRECONNECT for performance -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="dns-prefetch" href="https://avatar.iran.liara.run" />
+
+    <!-- ✅ THEME COLOR -->
+    <meta name="theme-color" content="#050816" />
+    <meta name="msapplication-TileColor" content="#050816" />
+
+    <!-- GEO TAGS for Lagos/Nigeria local search -->
+    <meta name="geo.region" content="NG-LA" />
+    <meta name="geo.placename" content="Lagos, Nigeria" />
+    <meta name="geo.position" content="6.5244;3.3792" />
+    <meta name="ICBM" content="6.5244, 3.3792" />
   </head>
   <body>
     <div id="root"></div>
